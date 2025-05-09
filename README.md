@@ -10,6 +10,6 @@ Ein einfaches Feedback-Formular mit PHP, Live-Vorschau (JS) und serverseitiger V
 ## 🚀 Projekt starten
 
 ```bash
-git clone https://github.com/deinname/feedback-form.git
-cd feedback-form
-docker compose up
+git clone https://github.com/jonas-ca/spitta-feedback.git
+cd spitta-feedback
+docker-compose up -d
