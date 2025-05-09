@@ -9,8 +9,6 @@ Ein einfaches Feedback-Formular mit PHP, Live-Vorschau (JS) und serverseitiger V
 
 ## 🚀 Projekt starten
 
-## 🚀 Projekt starten
-
 ```bash
 git clone https://github.com/jonas-ca/spitta-feedback.git
 cd spitta-feedback
