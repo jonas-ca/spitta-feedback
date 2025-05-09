@@ -22,4 +22,3 @@ docker-compose up -d
 Das Projekt ist anschließend im Browser erreichbar unter:
 
 👉 [http://localhost:8080/](http://localhost:8080/)
-```
