@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Spitta Feedback Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Spitta Feedback Form</h1>
+    <form action="submit.php" method="POST">
+        <select name="salutation" class="sync" data-target="preview-salutation">
+            <option value="">Anrede wählen...</option>
+            <option value="Herr">Herr</option>
+            <option value="Frau">Frau</option>
+        </select>
+
+        <label>
+            Vorname:
+            <input type="text" name="surname" id="surname" class="sync" data-target="preview-surname">
+        </label>
+
+        <label>
+            Nachname:
+            <input type="text" name="last_name" id="last_name" class="sync" data-target="preview-lastname">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" id="email" class="sync" data-target="preview-email">
+        </label>
+
+        <label class="label-message">
+            Nachricht:
+            <textarea name="message" id="message" class="sync" data-target="preview-message"></textarea>
+        </label>
+
+        <input class="btn" type="submit" value="Abschicken">
+    </form>
+
+    <hr>
+    <div class="preview">
+        <h2>Live-Vorschau</h2>
+        <div class="preview__content">
+            <p>
+                <span id="preview-salutation"></span> <span id="preview-surname"></span> <span id="preview-lastname"></span> - <span id="preview-email"></span> schreibt:
+            </p>
+            <p>„ <span id="preview-message"></span> “</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

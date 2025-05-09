@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #171c33;
+}
+
+*{
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+form{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+form label, select{
+  width: calc(50% - 20px);
+  display: block;
+}
+
+@media(max-width: 700px){
+  form label, select{
+    width: 100%;
+  }
+}
+
+form select{
+  max-height: 40px;
+  align-self: flex-end;
+}
+
+form input, form select{
+  padding: 10px 20px;
+}
+
+form input,form textarea{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.label-message{
+  width: 100%;
+}
+
+form textarea{
+  height: 150px;
+}
+
+.btn{
+  background-color: var(--primary-color);
+  color: white;
+  border: unset;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.btn:hover{
+  background-color: #0a1e7a;
+}
+
+hr{
+  margin: 40px 0;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+
+.preview{
+  /*opacity: 0;*/
+}
+
+.preview__content{
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+.preview *:not(h2) {
+  color: white;
+}
